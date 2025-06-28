@@ -1,5 +1,4 @@
-# 🧠 Off-Target Prediction via GCN and Random Forest
-
+# 🧠 SENTINEL
 This repository provides a pipeline for collecting PROTAC warhead data, matching compound identifiers across sources, and evaluating machine learning models (GCN, GAT, and Random Forest) for predicting off-target gene interactions.
 
 ---
@@ -62,6 +61,16 @@ All models are trained and evaluated with cross-validation (CV) and standard cla
 CV_on_different_models_auc_plot_and_test_by_different_metrics.ipynb
 ```
 
+The trained models are organized in the following directories:
+
+* GAT models: `cv_models_GAT_new/`
+* GCN models: `cv_models_GCN_new/`
+
+Final models used in experiments:
+
+* GAT: `cv_models_GAT_new/final_model.pt`
+* GCN: `cv_models_GCN_new/final_model.pt`
+
 ---
 
 ## 📁 Dataset
@@ -83,4 +92,3 @@ For questions or collaborations, feel free to reach out via GitHub issues or pul
 ## 📄 License
 
 This project is licensed under the MIT License.
-
